@@ -1,0 +1,20 @@
+# Nmap 7.94SVN scan initiated Sat Nov 23 13:09:14 2024 as: /usr/lib/nmap/nmap --privileged -p- --open -sS -sC -sV --min-rate=5000 -v -n -Pn -oN /home/kali/Desktop/stellarjwt/escaneo 172.17.0.2
+Nmap scan report for 172.17.0.2
+Host is up (0.000018s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 13:fd:a1:b2:31:9d:ea:33:a1:43:af:44:20:3a:12:12 (ECDSA)
+|_  256 a0:4f:c4:a9:00:af:cb:78:28:fd:94:c0:86:28:dc:a1 (ED25519)
+80/tcp open  http    Apache httpd 2.4.58 ((Ubuntu))
+|_http-title: NASA Hackeada
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+MAC Address: 02:42:AC:11:00:02 (Unknown)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 23 13:09:23 2024 -- 1 IP address (1 host up) scanned in 9.68 seconds
